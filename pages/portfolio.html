@@ -1,64 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/84b3210066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/para quién.html">Para quién</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/portfolio.html">Portfolio</a></li>
-                <li><a href="../pages/presupuesto.html">Solicitá un presupuesto</a></li>
-                <li><a href="https://wa.me/3417252002">Contactame</a></li>
-            </ul>
-            <img src="../img/logo.png" alt="">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/para quién.html">Para
+                                quién</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/presupuesto.html">Presupuestos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/servicios.html">Todos los servicios</a></li>
+                                <li><a class="dropdown-item" href="#">Redes sociales</a></li>
+                                <li><a class="dropdown-item" href="#">Asistencia virtual</a></li>
+                            </ul>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="galeria">
-            <h2>Soluciones gráficas</h2>
-            <div class="grid-galeria">
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/broxen1.png" alt="">
-                </div>
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/broxen2.png" alt="">
-                </div>
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/broxen3.png" alt="">
-                </div>
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/laurafit1.png" alt="">
-                </div>
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/laurafit2.png" alt="">
-                </div>
-                <div class="grid-item">
-                    <img src="../img/./solucionesgraficas/laurafit3.png" alt="">
-                </div>
-
+        <section class="carrusel">
+        <div>
+            <h2>Diseño de posts</h2>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/solucionesgraficas/broxen1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/solucionesgraficas/broxen2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/solucionesgraficas/broxen3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     </main>
 
-
     <footer id="footer" class="footer">
-        <h2>Mis redes</h2>
-        <img src="" alt="">
+        <h2>Mis redes:</h2>
         <div>
-            <!--! Enlaces absolutos-->
-            <a href="https://www.instagram.com/m1lagros_r/?hl=es-la" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://www.linkedin.com/in/milagros-rodriguez02/" target="_blank"><img src="../img/linkedin.png" alt="Logo Linkedin"></a>
+            <a href="https://www.instagram.com/m1lagros_r/?hl=es-la" target="_blank"><img src="../img/instagram.png"
+                    alt="Logo Instagram"></a>
+            <a href="https://www.linkedin.com/in/milagros-rodriguez02/" target="_blank"><img src="../img/linkedin.png"
+                    alt="Logo Linkedin"></a>
         </div>
-    </footer>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

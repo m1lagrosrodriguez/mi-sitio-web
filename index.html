@@ -1,89 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <script
+      src="https://kit.fontawesome.com/84b3210066.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"/>
     <title>Mi sitio web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/para quién.html">Para quién</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/portfolio.html">Portfolio</a></li>
-                <li><a href="./pages/presupuesto.html">Solicitá un presupuesto</a></li>
-                <li><a href="https://wa.me/3417252002">Contactame</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/para quién.html">Para quién</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-link active" aria-current="page" href="./pages/presupuesto.html">Presupuestos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/servicios.html">Todos los servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Redes sociales</a></li>
+                  <li><a class="dropdown-item" href="#">Asistencia virtual</a></li>
+                </ul>
             </ul>
-            <img src="./img/logo.png" alt="">
-        </nav>
-        </header>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <main>
-            <section class="hero">
-                <h1>Juntos vamos a comunicar
-                    la esencia de tu marca, traducir
-                    lo invisible y darle vida.</h1>
-                <a href="./pages/para quién.html">¡Empezá por acá!</a>
-            </section>
+    <main>
+      <section class="hero">
+        <h1 class="animate_animated animate__flash">
+          Juntos vamos a comunicar la esencia de tu marca, traducir lo invisible
+          y darle vida.
+        </h1>
+        <a href="./pages/para quién.html">¡Empezá por acá!</a>
+      </section>
 
-            <section class="servicios">
-                <div class="manejoderrss">
-                    <img src="./img/manejoderrss.png" alt="">
-                    <h3>Manejo de redes sociales</h3>
-                    <p>Si tenés una empresa ya establecida y necesitás apoyo en el manejo de redes sociales, esto es para vos. <br> Planifico tu calendario, creo el contenido para tus redes sociales y monitoreo los resultados.</p>
-                </div>
+      <section class="servicios">
+        <div>
+          <div>
+            <img src="./img/manejoderrss.png" alt="" />
+          </div>
+          <div class="ladoimagen">
+            <h3>Manejo de redes sociales</h3>
+            <p>
+              Si tenés una empresa ya establecida y necesitás apoyo en el manejo
+              de redes sociales, esto es para vos. <br />
+              Planifico tu calendario, creo el contenido para tus redes sociales
+              y monitoreo los resultados.
+            </p>
+            <a href="./pages/servicios.html">Más detalles</a>
+          </div>
+        </div>
 
-                <div>
-                    <img src="./img/estrategia.png" alt="">
-                    <h3>Estrategia digital</h3>
-                    <p>Juntos desarrollaremos estrategias digitales según las necesidades de tus clientes. <br> Te ayudo a definir target y ruta a seguir, con un plan de marketing integral, para lograr tus objetivos. </p>
-                    <a href="./pages/servicios.html">Más detalles</a>
-                </div>
+        <div>
+          <div>
+            <img src="./img/estrategia.png" alt="" />
+          </div>
+          <div class="ladoimagen">
+            <h3>Estrategia digital</h3>
+            <p>
+              Juntos desarrollaremos estrategias digitales según las necesidades
+              de tus clientes. <br/>
+              Te ayudo a definir target y ruta a seguir, con un plan de
+              marketing integral, para lograr tus objetivos.
+            </p>
+            <a href="./pages/servicios.html">Más detalles</a>
+          </div>
+        </div>
 
-                <div>
-                    <img src="./img/solucionesgraficas.png" alt="">
-                    <h3>Soluciones gráficas</h3>
-                    <p>Ahorrá tiempo y dejá de preocuparte por los diseños de tus publicaciones <br> para dedicarle tiempo a crear tus clientes, productos y servicios. </p>
-                    <a href="./pages/servicios.html">Más detalles</a>
-                </div>
+        <div>
+          <div>
+            <img src="./img/solucionesgraficas.png" alt="" />
+          </div>
+          <div class="ladoimagen">
+            <h3>Soluciones gráficas</h3>
+            <p>
+              Ahorrá tiempo y dejá de preocuparte por los diseños de tus
+              publicaciones <br />
+              para dedicarle tiempo a crear tus clientes, productos y servicios.
+            </p>
+            <a href="./pages/servicios.html">Más detalles</a>
+          </div>
+        </div>
 
-                <div>
-                    <img src="./img/asistenciavirtual.png" alt="">
-                    <h3>Asistencia virtual</h3>
-                    <p>Si lo que necesitás es una mano con las tareas digitales de tu emprendimiento, esta es tu mejor opción. </p>
-                    <a href="./pages/servicios.html">Más detalles</a>
-                </div>
+        <div>
+          <div>
+            <img src="./img/asistenciavirtual.png" alt="" />
+          </div>
+          <div class="ladoimagen">
+            <h3>Asistencia virtual</h3>
+            <p>
+              Si lo que necesitás es una mano con las tareas digitales de tu
+              emprendimiento, esta es tu mejor opción.
+            </p>
+            <a href="./pages/servicios.html">Más detalles</a>
+          </div>
+        </div>
 
-                <div>
-                    <img src="./img/publicidadonline.png" alt="">
-                    <h3>Publicidad digital</h3>
-                    <p>Diseño campañas optimizadas en Instagram y Facebook para mejorar <br> tu alcance, posicionamiento y atraer clientes potenciales. </p>
-                    <a href="./pages/servicios.html">Más detalles</a>
-                </div>
+        <div>
+          <div>
+            <img src="./img/publicidadonline.png" alt="" />
+          </div>
+          <div class="ladoimagen">
+            <h3>Publicidad digital</h3>
+            <p>
+              Diseño campañas optimizadas en Instagram y Facebook para mejorar
+              <br />
+              tu alcance, posicionamiento y atraer clientes potenciales.
+            </p>
+            <a href="./pages/servicios.html" class="ultimoboton">Más detalles</a>
+          </div>
+        </div>
+      </section>
 
-                
-            </section>
-
-            <div class="fixed">
-                <img src="./img/wsp.png" alt="">
-            </div>
-    
-        </main>
+      <div class="fixed">
+        <img src="./img/wsp.png" alt="" />
+      </div>
+    </main>
 
     <footer id="footer" class="footer">
-        <h2>Mis redes</h2>
-        <img src="" alt="">
-        <div>
-            <!--! Enlaces absolutos-->
-            <a href="https://www.instagram.com/m1lagros_r/?hl=es-la" target="_blank"><img src="./img/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://www.linkedin.com/in/milagros-rodriguez02/" target="_blank"><img src="./img/linkedin.png" alt="Logo Linkedin"></a>
-        </div>
-    </footer>
-</body>
+      <h2>Mis redes:</h2>
+      <div>
+          <a href="https://www.instagram.com/m1lagros_r/?hl=es-la" target="_blank"><img src="./img/instagram.png" alt="Logo Instagram"></a>
+          <a href="https://www.linkedin.com/in/milagros-rodriguez02/" target="_blank"><img src="./img/linkedin.png" alt="Logo Linkedin"></a>
+      </div>
+  </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
