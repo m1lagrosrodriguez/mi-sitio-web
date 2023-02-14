@@ -1,14 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap');
 
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{ font-family: 'Roboto', sans-serif;
-    color: #222020;
+main{
+    background-image: url(../img/fondo-main.png);
+}
+
+.fixed img{
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+
+.footer{
+    background-color: #22202011;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Italiana', serif;
+    font-style: italic;
+}
+
+footer h2{
+    margin: 10px;
+}
+
+footer div img{
+    width: 40px;
+    margin: 10px;
 }
 
 /*------PÁGINA INDEX----*/
@@ -48,13 +72,6 @@ header nav img{
     position: fixed;
 }
 
-.hero h1{ 
-    width: 58%;
-    font-family: 'Italiana', serif;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-}
 
 .hero{
     background-image: url(../img/oficina.png);
@@ -64,6 +81,15 @@ header nav img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.hero h1{ 
+    width: 58%;
+    font-family: 'Italiana', serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
 }
 
 .hero img{
@@ -94,11 +120,8 @@ header nav img{
     background-image: url(../img/fondo-main.png);
 }
 
-.servicios a:hover{
-    box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    transition: 1s;
+.ladoimagen{
+    width: 40%;
 }
 
 .servicios h3{
@@ -125,10 +148,6 @@ header nav img{
     flex-wrap: wrap;
 }
 
-.ladoimagen{
-    width: 40%;
-}
-
 .servicios a{
     color: #222020;
     font-size: 12px;
@@ -138,30 +157,13 @@ header nav img{
     padding: 5px 5px
 }
 
-.fixed img{
-    width: 50px;
-    position: fixed;
-    right: 20px;
-    bottom: 40px;
+.servicios a:hover{
+    box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    transition: 1s;
 }
 
-.footer{
-    background-color: #22202011;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    font-family: 'Italiana', serif;
-    font-style: italic;
-}
-
-footer h2{
-    margin: 10px;
-}
-
-footer div img{
-    width: 40px;
-    margin: 10px;
-}
 
 /*----------PÁGINA SERVICIOS---------*/
 
@@ -169,6 +171,13 @@ footer div img{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     align-items: center;
+}
+
+.todaslasopciones div:hover{
+    box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
+    transition: 1s;
 }
 
 .opciones img {
@@ -188,14 +197,8 @@ footer div img{
     margin: 15px;
 }
 
-.todaslasopciones div:hover{
-    box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
-    transition: 1s;
-}
-
 /*----------PÁGINA PARA QUIÉN---------*/
+
 main h2 {
     font-family: 'Italiana', serif;
     padding: 40px 0px 0px 20px;
@@ -203,51 +206,48 @@ main h2 {
     text-align: center;
 }
 
-
-.paraquien {
+.agentes {
     line-height: 1.2;
-    margin-left: 40px;
-    display: grid;
 }
 
-
-.paraquien div h3 {
-    font-family: 'Italiana', serif;
+.agentes div h3 {
     font-size: 35px;
 }
 
-.paraquien div img{
-    height: 350px;
-    width: 350px;
+.agentes div img{
+    height: 340px;
+    width: 340px;
 }
 
-.paraquien div p{
-    width: 26%;
-}
-
-
-main{background-image: url(../img/fondo-main.png);}
-
+.agentes p {
+    font-size: 12px;
+}   
 
 /*----------PÁGINA PORTFOLIO---------*/
 
 .carrusel{
     padding: 150px;
     width: 870px;
-    height: 870px
+    height: 870px;
+    object-fit: cover;
+    object-position: inherit;
 }
 
-
+.carrusel img{
+    object-fit: cover;
+}
 /*----------PÁGINA PRESUPUESTO---------*/
-.contame h2{
-    font-size: 40px;
-    width: 70%;
-    text-align: left;
-}
+
+
 
 .arreglarletra{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+.contame h2{
+    font-size: 40px;
+    width: 70%;
+    text-align: left;
 }
 
 .arreglarletra h3 {
@@ -255,13 +255,10 @@ main{background-image: url(../img/fondo-main.png);}
     text-align: left;
 }  
 
-.servicioaelegir h3{
-    text-align: left;
-}
-
 .servicioaelegir {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     margin: 40px;
 }
 
@@ -269,16 +266,20 @@ main{background-image: url(../img/fondo-main.png);}
     margin: 40px
 }
 
-.pais{
-    margin: 40px
+.servicioaelegir h3{
+    text-align: left;
 }
 
-.contame{
+.pais{
     margin: 40px
 }
 
 .pais h3{
     text-align: left;
+}
+
+.contame{
+    margin: 40px
 }
 
 .respuesta h4{
@@ -401,7 +402,6 @@ main{background-image: url(../img/fondo-main.png);}
 
 /*-----RESPONSIVE en SERVICIOS-----*/
 
-
 @media screen and (max-width: 1230px){
     .todaslasopciones{
     display: flex;
@@ -427,11 +427,36 @@ main{background-image: url(../img/fondo-main.png);}
     .todaslasopciones p{
         width: 60%;
         }    
-
 }
 
 /*-----RESPONSIVE en PARA QUIÉN-----*/
 
+/*-----RESPONSIVE en PORTFOLIO-----*/
+@media screen and (max-width: 880){
+    .carrusel img {
+        padding: 0px;
+        width: 500px;
+    }
+    }
+
+/*-----RESPONSIVE en PARA QUIÉN-----*/
+@media screen and (max-width: 854){
+    .contame h2{
+        font-size: 33px;
+    }
+
+@media screen and (max-width: 724){
+    .contame h2{
+        font-size: 29px;
+        width: 95%;
+        }
+
+@media screen and (max-width: 416){
+    .contame h2{
+        font-size: 22px;
+        width: 95%;
+    }
+    
 
 /*-----HOVER-----*/
 

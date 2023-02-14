@@ -1,0 +1,168 @@
+@media screen and (max-width: 1100px){
+    .hero h1 { margin: 50px 0px 0px 0px;
+    }
+    .servicios div {
+        height: 100%;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+    .ultimoboton{
+        margin: 0px 0px 40px 0px;
+    }
+
+@media screen and (max-width:950px){
+    .hero h1{
+        font-size: 45px;
+    }
+
+    .hero a{
+        margin: 12px 0px 48px 0px;
+        font-size: 13px;
+    }
+
+    .ladoimagen{
+        font-size: 17px;
+    }
+
+    .servicios p {
+        font-size: 18px;
+        width: 130%;
+        }
+}
+
+@media screen and (max-width: 800px){
+    header nav ul{
+    display: none;
+    }
+
+    header nav{
+        justify-content: space-around;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .fa-solid{
+        display: flex;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    header {
+        display: grid;
+        flex-direction: column;
+    }
+
+    .hero h1{
+        font-size: 37px;
+    }
+
+    .servicios p {
+        font-size: 16px;
+        width: 140%;
+        }
+}
+
+
+@media screen and (max-width: 614px){
+    .hero h1{
+        width: 74%;
+    }
+}
+
+@media screen and (max-width: 465px){
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+}
+
+.servicios div a {
+    margin: 0px 0px 60px 0px;
+}
+
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        text-align: center;
+    }
+
+    .hero a {
+        margin: 10px 0px 60px 0px;
+    }
+}
+
+/*-----RESPONSIVE en SERVICIOS-----*/
+
+@media screen and (max-width: 1230px){
+    .todaslasopciones{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+
+    .opciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .todaslasopciones p{
+    width: 40%;
+    }
+    
+    .todaslasopciones h3{
+        margin: auto;
+        }
+        
+@media screen and (max-width: 670px){      
+    .todaslasopciones p{
+        width: 60%;
+        }    
+}
+
+/*-----RESPONSIVE en PARA QUIÉN-----*/
+
+/*-----RESPONSIVE en PORTFOLIO-----*/
+@media screen and (max-width: 880){
+    .carrusel img {
+        padding: 0px;
+        width: 500px;
+    }
+    }
+
+/*-----RESPONSIVE en PARA QUIÉN-----*/
+@media screen and (max-width: 854){
+    .contame h2{
+        font-size: 33px;
+    }
+
+@media screen and (max-width: 724){
+    .contame h2{
+        font-size: 29px;
+        width: 95%;
+        }
+
+@media screen and (max-width: 416){
+    .contame h2{
+        font-size: 22px;
+        width: 95%;
+    }
+} 
