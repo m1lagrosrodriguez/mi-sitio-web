@@ -1,6 +1,15 @@
+/*-----RESPONSIVE en INDEX-----*/
+
 @media screen and (max-width: 1100px){
-    .hero h1 { margin: 50px 0px 0px 0px;
+    .hero h1 { 
+        font-size: 45px;
     }
+
+    .hero a{
+        margin: 0px 0px 0px 0px;
+        font-size: 18px;
+    }
+
     .servicios div {
         height: 100%;
         flex-wrap: nowrap;
@@ -22,8 +31,7 @@
     }
 
     .hero a{
-        margin: 12px 0px 48px 0px;
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .ladoimagen{
@@ -33,7 +41,7 @@
     .servicios p {
         font-size: 18px;
         width: 130%;
-        }
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -61,22 +69,29 @@
         flex-direction: column;
     }
 
-    .hero h1{
-        font-size: 37px;
+    .hero{
+        flex-direction: column;
+        h1{
+            font-size: 35px;
+            text-align: center;
+            width: 80%;
+        }
     }
 
     .servicios p {
         font-size: 16px;
         width: 140%;
         }
-}
 
-
-@media screen and (max-width: 614px){
-    .hero h1{
-        width: 74%;
+    .servicios div{
+                div{
+                    img{
+                        width: 300px;
+                    }
+                }
+            }
     }
-}
+
 
 @media screen and (max-width: 465px){
     header nav ul{
@@ -88,24 +103,15 @@
     }
 
     .hero h1{
-        font-size: 30px;
-    }
-}
+            font-size: 32px;
+        }
 
-.servicios div a {
-    margin: 0px 0px 60px 0px;
-}
+    .hero a{
+            font-size: 13px;
+        }
 
-    .hero {
-        flex-direction: column;
-    }
-    
-    .hero h1 {
-        text-align: center;
-    }
-
-    .hero a {
-        margin: 10px 0px 60px 0px;
+    .servicios div a {
+        margin: 0px 0px 60px 0px;
     }
 }
 
@@ -116,53 +122,168 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    }
 
-    .opciones{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .opciones{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        .opciones p{
+        width: 40%;
+        margin: 0px;
         }
-
-    .todaslasopciones p{
-    width: 40%;
     }
-    
+
     .todaslasopciones h3{
         margin: auto;
         }
-        
+    }
+
+
 @media screen and (max-width: 670px){      
-    .todaslasopciones p{
-        width: 60%;
-        }    
+    .todaslasopciones{ 
+        .opciones p{
+            width: 60%;
+            }
+    }
 }
 
-/*-----RESPONSIVE en PARA QUIÉN-----*/
-
 /*-----RESPONSIVE en PORTFOLIO-----*/
-@media screen and (max-width: 880){
-    .carrusel img {
-        padding: 0px;
-        width: 500px;
+
+
+@media screen and (max-width: 900px){
+    .diseñodepost{
+        h2{
+            font-size: 40px;
+            margin: 35px;
+        }
     }
+    .carruselyfeed{
+        flex-direction: column;
+        align-items: center;
+            img{
+                height: 350px;
+            }
+        } 
     }
+
+@media screen and (max-width: 550px){
+    .carruselyfeed{ 
+            img{
+                height: 300px;
+            }
+        } 
+    }
+
+@media screen and (max-width: 450px){
+    .diseñodepost{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .carruselyfeed{
+            img{
+                height: 250px;
+            }
+        } 
+    }
+
 
 /*-----RESPONSIVE en PARA QUIÉN-----*/
-@media screen and (max-width: 854){
-    .contame h2{
-        font-size: 33px;
+
+@media screen and (max-width: 1120px){
+    .fotosagentes{
+        width: 60%;
+            h3{
+                font-size: 30px;
+            }
+            img{
+                height: 270px;
+                width: 270px;
+            }
+            p{
+                font-size: 13px;
+                width: 177%;
+            }
+        }
     }
 
-@media screen and (max-width: 724){
-    .contame h2{
-        font-size: 29px;
-        width: 95%;
+    @media screen and (max-width: 950px){
+        .row{
+            flex-direction: column;
+            align-items: center;
+            
+            .agentes{
+                text-align: center;
+                align-items: center;
+            }
+        }
+        .fotosagentes{
+            img{ height:250px;
+                width: 250px;
+            }
+            p{
+                width: 150%;
+            }
+        }
+    }
+    @media screen and (max-width: 766px){
+        .fotosagentes{
+            align-items: center;
+            width: 60%;
+            p{
+                width: 115%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 490px){
+        .fotosagentes{
+            width: 90%;
+            p{
+                width: 115%;
+            }
+        }
+    }
+/*-----RESPONSIVE en PRESUPUESTO-----*/
+
+@media screen and (max-width: 854px){
+    .titulocontame h2{
+        font-size: 25px;
+        width: 60%;
+        }
+    }
+
+@media screen and (max-width: 724px){
+    .titulocontame h2{
+        width: 87%;
         }
 
-@media screen and (max-width: 416){
-    .contame h2{
-        font-size: 22px;
-        width: 95%;
+    .respuesta h4{
+        font-size: 18px;
+    }
+    }
+
+    @media screen and (max-width: 550px){
+        .respuesta h4{
+            font-size: 16px;
+            padding: 10px;
+        }
+        .textarea{
+            size: 20px;
+        }
+
+        .servicioaelegir{
+            font-size: 12px;
+            justify-items: auto;
+        }
+    }
+
+
+@media screen and (max-width: 416px){
+    .titulocontame h2{
+        font-size: 20px;
+        width: 100%;
     }
 } 

@@ -1,11 +1,19 @@
-footer{
+.footer{
+    background-image: url(../img/footer.png);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Italiana', serif;
+    font-style: italic;
     h2{
         margin: 10px;
+        }
     div{
-        img{
-        width: 40px;
-        margin: 10px;
+        a{
+            img{
+            width: 40px;
+            margin: 10px;
+                }
             }
         }
     }
-}

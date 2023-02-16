@@ -13,15 +13,13 @@
         width: 58%;
         font-family: 'Italiana', serif;
         font-size: 50px;
-        font-weight: bold;
-        text-align: left;
     }
     img{
         width: 600px;
         height: 400px;
     }
     a{
-        color: #22202059;
+        color: #222020;
         font-size: 20px;
         border: 1px solid black;
         text-decoration: none;
@@ -40,15 +38,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url(../img/fondo-main.png);
-        
         div{
             height: 350px;
             display: flex;
-            text-align: center;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             div{
                 img{
@@ -57,20 +52,18 @@
             }
             
         }
+    }
 
 .ladoimagen{
         width: 40%;
-
         h3{
             font-family: 'Italiana', serif;
             font-size: 34px;
         }
-
         p{
             font-size: 20px;
             margin: 10px;
         }
-
         a{
             color: #222020;
             font-size: 12px;
@@ -78,7 +71,6 @@
             text-decoration: none;
             font-weight: bold;
             padding: 5px 5px;
-
                 &:hover{
                 box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
                 -webkit-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
@@ -94,7 +86,6 @@
 .todaslasopciones{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    align-items: center;
             div{
             &:hover{
                 box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
@@ -102,12 +93,13 @@
                 -moz-box-shadow: 10px 10px 140px 34px rgba(0,0,0,0.75);
                 transition: 1s;
             }
+        }    
     .opciones{
             img{
                 height: 250px;
             }
             h3{
-                font-family: 'Italiana', serif;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-size: 30px;
                 text-align: center;
                 margin: 30px;
@@ -119,92 +111,99 @@
             }
         }
     }
-}
 
 /*----------PÁGINA PARA QUIÉN---------*/
 
 .paraquientitulo{
-    font-family: 'Italiana', serif;
-    padding: 40px 0px 0px 20px;
-    font-size: 50px;
-    text-align: center;
-}
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 30px;
+    }   
 
-.agentes{
-    line-height: 1.2;
 
-    div{
+    .fotosagentes{
+        padding: 35px;
         h3{
-            font-size: 35px;
+            font-family:'Italiana', serif;;
         }
         img{
-            height: 350px;
-            width: 350px;
+            height: 330px;
+            width: 330px;
         }
+
         p{
-            width: 26%;
+            font-size: 13px;
         }
     }
-}
 
 /*----------PÁGINA PORTFOLIO---------*/
-.carrusel{
-    padding: 150px;
-    width: 870px;
-    height: 870px;
-    object-fit: cover;
-    object-position: inherit;
 
-    img{
-    object-fit: cover;
+    .diseñodepost{
+        align-items: center;
+        h2{ 
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            }
     }
-}
+
+    .carruselyfeed{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+            img{
+                height: 400px;
+                margin-bottom: 50px;
+            }
+        }
 
 /*----------PÁGINA PRESUPUESTO---------*/
 
-
-.arreglarletra{
-.contame{
-        h2{
-            font-size: 40px;
-            width: 70%;
-            text-align: left;
+    .titulocontame{
+        background-image: url(../img/presupuesto.png);
+            h2{
+                color: beige;
+                font-size: 35px;
+                width: 50%;
+                text-align: left;
+                padding: 60px;
+            }
         }
+
+    .nombreycorreo{
+        margin: 40px
+    }
+
+    .servicioaelegir{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 40px;
 
         h3{
-            font-size: 25px;
+            text-align: left;
+        }
+        label{
+            padding: 5px;
+            }
+        }
+
+    .pais{
+        margin: 40px;
+        h3{
             text-align: left;
         }
     }
-}
 
-.nombreycorreo {
-    margin: 40px
-}
-
-.servicioaelegir{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin: 40px;
-
-    h3{
-        text-align: left;
+    .contame{
+        margin: 40px;
     }
-}
 
-.pais{
-    margin: 40px;
-    h3{
-        text-align: left;
-    }
-}
+    .respuesta h4{
+        font-style: italic;
+        font-size: 22px;
+        padding: 15px
+        }
 
-.contame{
-    margin: 40px
-}
-
-.respuesta h4{
-    font-family: 'Italiana', serif;
-    margin: 40px 0px 0px 0px;
-}
