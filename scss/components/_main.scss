@@ -3,7 +3,9 @@
 
 .hero{
     background-image: url(../img/oficina.png);
-    background-position: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     height: calc(100vh - 120px);
     background-size: 1920px 1080px;
     display: flex;
@@ -11,23 +13,24 @@
     justify-content: center;
     h1{
         width: 58%;
-        font-family: 'Italiana', serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 50px;
+        color: $color-secundario;
     }
     img{
         width: 600px;
         height: 400px;
     }
     a{
-        color: #222020;
+        color: $color-secundario;
         font-size: 20px;
-        border: 1px solid black;
+        border: 1px solid $color-secundario;
         text-decoration: none;
         padding: 5px 7px;
         margin: 20px;
         transition: 1s;   
         &:hover{ 
-            color: #000000;
+            color: $color-secundario;
             transform: scale(1.2);
             transition: 1s; 
                 }
@@ -65,9 +68,9 @@
             margin: 10px;
         }
         a{
-            color: #222020;
+            color:$color-principal;
             font-size: 12px;
-            border: 1px solid black;
+            border: 1px solid $color-principal;
             text-decoration: none;
             font-weight: bold;
             padding: 5px 5px;
@@ -115,7 +118,7 @@
 /*----------PÁGINA PARA QUIÉN---------*/
 
 .paraquientitulo{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 50px;
         text-align: center;
         margin-top: 30px;
@@ -156,7 +159,7 @@
             img{
                 height: 400px;
                 margin-bottom: 50px;
-                object-fit: cover;
+                object-fit: fixed;
                 object-position: inherit;
             }
         }
@@ -165,8 +168,11 @@
 
     .titulocontame{
         background-image: url(../img/presupuesto.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
             h2{
-                color: rgb(0, 0, 0);
+                color: $color-secundario;
                 font-size: 35px;
                 width: 50%;
                 text-align: left;

@@ -1,1 +1,18 @@
-$color-principal: #000000;
+//*VARIABLES
+
+$color-principal: #212529;
+$color-secundario: antiquewhite;
+
+//*LISTAS
+
+//*MAPAS
+$boton:(
+    bg-boton: none,
+    border-boton: 1px solid antiquewhite,
+    color-texto: antiquewhite,
+);
+
+.boton{
+    background-color: map-get($boton, bg-boton);
+    border: map-get($boton, border-boton);
+    }
